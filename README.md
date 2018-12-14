@@ -31,9 +31,7 @@ Ran all test suites.
 npm ERR! Test failed.  See above for more details.
 ```
 
-因为使用了以下配置安装，就报了上面的错误
-
-(仔细核对后，真是大意了，这里使用的是 babel-core@6x 😭）
+因为使用了以下配置安装，于是报了上面的错误(仔细核对后，真是大意了，这里使用的是 babel-core@6x 😭）
 
 ```json
   // babel-7-err/package.json
@@ -45,7 +43,7 @@ npm ERR! Test failed.  See above for more details.
     "jest": "^23.6.0"
   },
 
-  // babel-7-err-1/package.json
+  // 移除 "babel-core": "^6.26.3", 仅使用 @babel/core@7.x 也不行的
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
@@ -54,7 +52,10 @@ npm ERR! Test failed.  See above for more details.
   },
 ```
 
-应该改为，这样就不会报错了(**最关键的代码** `"babel-core": "7.0.0-bridge.0",`)
+改为下面这样，就不会报错了(**关键代码** `"babel-core": "7.0.0-bridge.0",`)
+
+> 官方回复：
+> Please kindly read the docs about running Jest with Babel 7: https://jestjs.io/docs/en/getting-started#using-babel
 
 ```json
   "devDependencies": {
