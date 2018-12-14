@@ -31,9 +31,9 @@ Ran all test suites.
 npm ERR! Test failed.  See above for more details.
 ```
 
-使用以下配置安装，就报上面的错误
+因为使用了以下配置安装，就报了上面的错误
 
-(仔细核对后，确实是大意了，这里使用的是 babel@6x 😭，这里更新为）
+(仔细核对后，真是大意了，这里使用的是 babel-core@6x 😭）
 
 ```json
   // babel-7-err/package.json
@@ -68,7 +68,9 @@ npm ERR! Test failed.  See above for more details.
 
 版本真要认真看，浪费了好多时间。
 
-为什么浪费了这么多时间，和 [jest 缓存](https://jestjs.io/docs/zh-Hans/troubleshooting#%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98)也有关系，以至于更新配置，运行就有时 OK，有时就报错，，没及时生效就对配置感觉到迷茫，时好时坏混乱了，找不到原因
+官方版本是好的，为什么还浪费了这么多时间？
+
+因为 [jest 缓存](https://jestjs.io/docs/zh-Hans/troubleshooting#%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98)的关系，以至于更新配置，运行就有时 OK，有时就报错，修改配置没及时生效时好时坏混乱了，于是对官方版本也感到怀疑，所以浪费了很多时间
 
 ```json
 // package.json
