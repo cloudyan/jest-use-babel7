@@ -71,7 +71,7 @@ npm ERR! Test failed.  See above for more details.
 
 官方版本是好的，为什么还浪费了这么多时间？
 
-因为 [jest 缓存](https://jestjs.io/docs/zh-Hans/troubleshooting#%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98)的关系，以至于更新配置，运行就有时 OK，有时就报错，修改配置没及时生效时好时坏混乱了，于是对官方版本也感到怀疑，所以浪费了很多时间
+因为 [jest 缓存](https://jestjs.io/docs/en/troubleshooting#caching-issues)的关系，以至于更新修改配置没及时生效，导致测试时好时坏混乱了，也对官方版本感到怀疑了，所以浪费了很多时间
 
 ```json
 // package.json
@@ -79,3 +79,7 @@ npm ERR! Test failed.  See above for more details.
     "test": "jest --no-cache"
   }
 ```
+
+- The transform script was changed or babel was updated and the changes aren't being recognized by Jest?
+
+尝试使用 `--no-cache` 选项。 Jest 会缓存转换的模块文件来加速测试的执行。
