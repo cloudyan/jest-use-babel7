@@ -14,11 +14,12 @@ module.exports = {
   ],
   plugins: [
     // '@babel/runtime',
-    '@babel/plugin-syntax-dynamic-import',
-    '@babel/plugin-proposal-object-rest-spread',
+    // '@babel/plugin-syntax-dynamic-import',
+    // '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-proposal-class-properties',
-    '@babel/plugin-proposal-export-namespace-from',
-    '@babel/plugin-transform-template-literals',
+    // '@babel/plugin-proposal-export-namespace-from',
+    // '@babel/plugin-transform-template-literals',
+    // https://babeljs.io/docs/en/babel-plugin-proposal-export-default-from
     '@babel/plugin-proposal-export-default-from',
     [
       '@babel/plugin-transform-runtime',
@@ -26,8 +27,6 @@ module.exports = {
         corejs: 2,
       },
     ],
-    // https://babeljs.io/docs/en/babel-plugin-proposal-export-default-from
-    // '@babel/plugin-proposal-export-default-from',
     // https://babeljs.io/docs/en/babel-helper-module-imports
     // '@babel/helper-module-imports',
     // https://www.npmjs.com/package/babel-plugin-add-module-exports

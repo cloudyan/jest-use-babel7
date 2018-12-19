@@ -1,5 +1,7 @@
 // 升级到 babel7
 
+import es6 from './es6';
+
 this;
 
 

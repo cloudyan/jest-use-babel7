@@ -22,6 +22,8 @@ var _objectSpread2 = _interopRequireDefault(require("@babel/runtime-corejs2/help
 
 var _extends2 = _interopRequireDefault(require("@babel/runtime-corejs2/helpers/extends"));
 
+var _es = _interopRequireDefault(require("./es6"));
+
 require("a");
 
 var _mod = _interopRequireDefault(require("mod"));
@@ -36,7 +38,6 @@ function _templateObject() {
   return data;
 }
 
-// 升级到 babel7
 void 0;
 var _a = {
   a: 1
