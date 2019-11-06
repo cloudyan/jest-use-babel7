@@ -1,0 +1,21 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "babel-examples/babel-7/package.json",
+        "jest-examples/async/package.json",
+        "jest-examples/automatic-mocks/package.json",
+        "jest-examples/babel-7/package.json",
+        "jest-examples/enzyme/package.json",
+        "jest-examples/getting-started/package.json",
+        "jest-examples/jquery/package.json",
+        "jest-examples/manual-mocks/package.json",
+        "jest-examples/module-mock/package.json",
+        "jest-examples/react/package.json",
+        "jest-use-babel-7-err/package.json",
+        "jest-use-babel-7-ok/package.json",
+        "jest-use-babel-7/package.json"
+      ]
+    }
+  }
+}
