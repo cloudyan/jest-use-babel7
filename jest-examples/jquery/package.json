@@ -4,7 +4,7 @@
   "name": "example-jquery",
   "devDependencies": {
     "babel-preset-env": "*",
-    "jest": "*"
+    "jest": "^24.9.0"
   },
   "dependencies": {
     "jquery": "*"
