@@ -1,5 +1,7 @@
 # babel-7
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cloudyan/jest-use-babel7.svg)](https://greenkeeper.io/)
+
 测试 jest using babel-7
 
 https://github.com/facebook/jest/tree/master/examples/babel-7
