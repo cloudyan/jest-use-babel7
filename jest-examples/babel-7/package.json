@@ -6,8 +6,8 @@
     "@babel/core": "*",
     "@babel/preset-env": "*",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "*",
-    "jest": "*"
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0"
   },
   "scripts": {
     "test": "jest"
