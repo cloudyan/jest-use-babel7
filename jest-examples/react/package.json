@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "name": "example-react",
   "dependencies": {
-    "react": "16.4.1",
-    "react-dom": "16.4.1"
+    "react": "16.11.0",
+    "react-dom": "16.11.0"
   },
   "devDependencies": {
-    "babel-jest": "*",
+    "babel-jest": "^24.9.0",
     "babel-preset-env": "*",
     "babel-preset-react": "*",
-    "jest": "*"
+    "jest": "^24.9.0"
   },
   "scripts": {
     "test": "jest"
