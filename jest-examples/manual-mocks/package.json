@@ -4,7 +4,7 @@
   "name": "example-manual-mocks",
   "devDependencies": {
     "babel-preset-env": "*",
-    "jest": "*"
+    "jest": "^24.9.0"
   },
   "scripts": {
     "test": "jest"
